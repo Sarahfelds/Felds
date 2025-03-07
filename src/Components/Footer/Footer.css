@@ -1,0 +1,164 @@
+.footer {
+    background: rgba(217, 217, 217, 0.45);
+    border-radius: 21px;
+    padding: -20px;
+    font-family: 'Noto Sans', sans-serif;
+    color: rgba(53, 51, 51, 0.81);
+    max-width: 1440px;
+    margin: 0 26px;
+    margin-bottom: 30px;
+  }
+  
+  .footer-logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 350px;
+    font-weight:700;
+    letter-spacing: 30px;
+    color: rgba(78, 2, 2, 0.81);
+    text-align: center;
+    margin-bottom: -30px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 1px solid rgba(57, 56, 56, 0.81);
+    margin: 0 30px
+  }
+  
+  .footer-left {
+    flex: 1;
+    max-width: 560px;
+    margin: 10px;
+  }
+  
+  .footer-text {
+    font-size: 24px;
+    margin-bottom: 40px;
+    margin-top: 150px;
+  }
+  
+  .subscribe-container {
+    display: flex;
+    background: white;
+    border-radius: 14px;
+    height: 70px;
+    margin-bottom: 40px;
+  }
+  
+  .email-input {
+    flex: 1;
+    border: none;
+    padding: 0 20px;
+    font-size: 24px;
+    border-radius: 14px 0 0 14px;
+  }
+  
+  .email-input:focus {
+    outline: none;
+  }
+  
+  .divider {
+    width: 1px;
+    background: rgba(101, 99, 99, 0.81);
+  }
+  
+  .subscribe-btn {
+    padding: 0 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  
+  .subscribe-btn:hover {
+    opacity: 0.8;
+  }
+  
+  .privacy-text {
+    font-size: 24px;
+    
+  }
+  
+  .privacy-text a {
+    color: inherit;
+    text-decoration: underline;
+  }
+  
+  
+  
+  .footer-links {
+    display: flex;
+    gap: 70px;
+  }
+  
+  .nav-section,
+  .socials-section,
+  .official-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-right: 40px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 24px;
+    transition: opacity 0.2s;
+  }
+  
+  a:hover {
+    opacity: 0.8;
+  }
+  
+  .social-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .social-link img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .support-section {
+    margin-top: 40px;
+    font-size: 24px;
+    margin: -120px;
+    margin-left: 680px;
+    margin-bottom: 40px;
+  }
+  
+  .support-section p {
+    margin: 20px 0;
+  }
+  
+  .region-selector {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(30, 30, 30, 0.81);
+    font-size: 24px;
+  }
+  
+  .dropdown-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  

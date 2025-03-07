@@ -1,0 +1,122 @@
+.lip-care-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+  }
+  
+
+  .products-section {
+    display: flex;
+    gap: 30px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+    max-width: 1377px;
+  }
+  
+  .product-card {
+    flex: 1;
+    border-radius: 21px;
+    overflow: hidden;
+    position: relative;
+   
+    transition: transform 0.2s;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-image {
+    height: 380px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 550px;
+    
+  }
+  
+  .product-title {
+    font-family: 'Russo One', sans-serif;
+    font-size: 24px;
+    color: rgba(30, 30, 30, 0.81);
+    position: absolute;
+    top: 32px;
+    left: 31px;
+    margin: 0;
+  }
+  
+  .product-info {
+    padding: 30px;
+    text-align: left;
+  }
+  
+  .product-info h3 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 24px;
+    margin: 50;
+    padding-top: 105%;
+    color: #2e2c2c;
+  }
+  
+  .product-info p {
+    margin: 8px 0 0;
+    color: #3d3b3b;
+    font-size: 16px;
+  }
+  
+  .navigate-btn {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.2s;
+  }
+  
+  .navigate-btn:hover {
+    transform: translateY(-50%) scale(1.1);
+  }
+  
+  .navigate-btn img {
+    width: 45px;
+    height: 45px;
+    display: block;
+  }
+  
+  .banner-section {
+    background-image: url('../Assets/Lips-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 30%;
+    border-radius: 21px;
+    padding: 80px 140px;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    width: calc(93.5% - 40px);
+    max-width: 1100px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.20);
+  }
+  
+  .banner-section h2 {
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 24px;
+  }
+  
+  .banner-section p {
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    max-width: 659px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+  

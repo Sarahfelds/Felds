@@ -1,0 +1,186 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
+.navbar{
+    width: 100%;
+  font-family: 'Inter', sans-serif;
+}
+.shipping-banner {
+    background-color: rgba(217, 217, 217, 0.45);
+    height: 25px;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 20px 19px;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.20);
+  }
+.shipping-banner p {
+    font-weight: 700;
+    font-size: 16px;
+    color: #585555;
+  }
+  
+.pause-button {
+    position: absolute;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+.logo-container {
+    position: relative; /* Ensures child elements are positioned relative to this */
+    text-align: center;
+    display: inline-block;
+  }
+  
+.logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    font-weight: lighter;
+    color: #fcfcfc;
+    margin: 0;
+    position: relative;
+  }
+  
+.subtitle {
+    font-family: 'The Nautigal', cursive;
+    font-size: 20px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 150%;
+    bottom: -5px; /* Adjust to move it below the logo */
+    transform: translateX(-50%); /* Centers it horizontally */
+    white-space: nowrap;
+  }
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 19px;
+    margin-top: -110px;
+  }
+  
+.nav-left, .nav-right {
+    display: flex;
+    gap: 20px;
+  }
+  
+.nav-item {
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: opacity 0.3s;
+  }
+  
+.nav-item:hover {
+    opacity: 0.8;
+  }
+.hero-section {
+    background-image: url('/src/Components/Assets/martini.jpg');
+    background-size:cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    border-radius: 21px;
+    margin: 0 19px;
+    padding: 120px 20px;
+    position: relative;
+    height: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.20);
+  }
+
+.hero-content {
+    position: absolute;
+    bottom: 5%; /* Moves text lower */
+    right: 3%; /* Moves text to the right */
+    text-align: right;
+    color: #FFFFFF;
+    max-width: 594px;
+  }
+  
+.hero-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 34px; 
+    font-weight:lighter;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+.hero-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin: 10px 0 20px;
+    opacity: 0.9;
+  }
+  
+.waitlist-button {
+    background: transparent;
+    border: 1px solid #CEC8D4;
+    border-radius: 11px;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+.waitlist-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+.pause-circle {
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+.philosophy-section {
+    background-image: url('/src/Components/Assets/Pearl.jpg');
+    border-radius: 21px;
+    margin: 20px 19px;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.20);
+  }
+  
+.philosophy-title {
+    font-family: 'Antonio', sans-serif;
+    font-size: 40px;
+    color: rgba(30, 30, 30, 0.81);
+    margin: 0;
+    margin-left: 40px;
+  }
+  
+.shop-now-button {
+    background: transparent;
+    border: 1px solid #322F35;
+    border-radius: 14px;
+    color: rgba(30, 30, 30, 0.81);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px 40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position:absolute;
+    right: 5%;
+  }
+  
+.shop-now-button:hover {
+    background-color: rgba(30, 30, 30, 0.1);
+  }
+  
+  
