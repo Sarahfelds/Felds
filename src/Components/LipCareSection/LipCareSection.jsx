@@ -3,7 +3,7 @@ import './LipCareSection.css'
 import TintImage from '../Assets/Tint.jpg';
 import PlumpImage from '../Assets/Plump.jpg';
 import ShapeImage from '../Assets/Shape.jpg';
-const LipCareSection = ({ }) => {
+const LipCareSection = () => {
     const products = [
       {
         id: 1,
