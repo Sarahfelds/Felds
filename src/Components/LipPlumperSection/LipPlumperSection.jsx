@@ -1,18 +1,17 @@
 import React from 'react';
 import './LipPlumperSection.css';
+import PlumperImage from '../Assets/Plumper.jpg'; // Corrected import path for Plumper image
 
-const LipPlumperSection = ({ title = "PLUMP YOUR LIPS", description = "Build your plumping pout with our Hydrating Lip Plumper in a spectrum of shades. Choose a sheer tint that enhances your natural lip color for a subtle glow, or opt for a bolder hue for a more dramatic effect.", buttonText = "MEET HYDRATING LIP PLUMPER" }) => {
+const LipPlumperSection = ({ onNavigate, title = "PLUMP YOUR LIPS", description = "Build your plumping pout with our Hydrating Lip Plumper in a spectrum of shades. Choose a sheer tint that enhances your natural lip color for a subtle glow, or opt for a bolder hue for a more dramatic effect.", buttonText = "MEET HYDRATING LIP PLUMPER" }) => {
     return (
       <div className="lip-plumper-section">
-        
-        
         <div className="content-container">
           <div className="text-content">
             <h1 className="title">{title}</h1>
             <p className="description">
               {description}
             </p>
-            <button className="cta-button">
+            <button className="cta-button" onClick={() => onNavigate && onNavigate("lip-plumper")}> {/* Added onClick handler */}
               {buttonText}
             </button>
           </div>
@@ -34,7 +33,7 @@ const LipPlumperSection = ({ title = "PLUMP YOUR LIPS", description = "Build you
           </div>
   
           <div className="image-container">
-          <img src={require('../Assets/Plumper.jpg')} alt="Plumper" className="product-image" />
+          <img src={PlumperImage} alt="Plumper" className="product-image" /> {/* Used imported image */}
           </div>
         </div>
       </div>

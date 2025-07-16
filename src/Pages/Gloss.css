@@ -1,0 +1,262 @@
+/* Gloss.css */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+.gloss-page-container {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background-color: #faf9f6; /* Set the background color here */
+  display: flex; /* Use flexbox to arrange children vertically */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center items horizontally if they don't take full width */
+}
+
+/* Top Banner - matches navbar style */
+.shipping-banner {
+  background-color: rgba(217, 217, 217, 0.45);
+  height: 25px;
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 20px 19px;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.20);
+  width: calc(100% - 38px); /* Adjust width to account for margins */
+  max-width: 1200px; /* Optional: constrain max width for larger screens */
+}
+
+.shipping-banner p {
+  font-weight: 700;
+  font-size: 16px;
+  color: #585555;
+  margin: 0;
+}
+
+.pause-button {
+  position: absolute;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Navigation - simplified for login page */
+.futures-nav { /* Renamed from .login-nav for clarity, but keep the styles consistent */
+  background-color: white;
+  padding: 16px 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+  border-radius: 21px;
+  margin-left: 19px;
+  margin-right: 19px;
+  width: calc(100% - 38px); /* Adjust width to account for margins */
+  max-width: 1200px; /* Optional: constrain max width for larger screens */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.10); /* Added subtle shadow for depth */
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  font-weight: 700;
+  font-size: 20px;
+  color: #585555;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  color: #991b1b;
+}
+
+/* Logo - adapted for login page */
+.logo-container {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+
+.logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 50px;
+  font-weight: lighter;
+  color: #991b1b;
+  margin: 0;
+}
+
+.subtitle {
+  font-family: 'The Nautigal', cursive;
+  font-size: 20px;
+  color: #6b7280;
+  font-style: italic;
+  margin: 0;
+  position: absolute;
+  right: -60px;
+  bottom: 5px;
+}
+
+/* Main Gloss Section */
+.gloss-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-grow: 1; /* Allow it to grow and take available space */
+  background: #faf9f6; /* Keep this for the inner content card effect */
+  padding: 60px 80px;
+  gap: 48px;
+  box-sizing: border-box;
+  width: calc(100% - 38px); /* Match width of banner and nav */
+  max-width: 1200px; /* Match max-width of banner and nav */
+  margin-top: 20px; /* Add margin to separate from nav */
+  margin-bottom: 20px;
+  border-radius: 21px; /* Apply border-radius to match other sections */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.20); /* Apply shadow to match other sections */
+}
+
+.gloss-image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ddd;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+}
+
+.gloss-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.gloss-details-section {
+  flex: 1;
+  background: #faf9f6;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gloss-title {
+  font-family: 'Antonio', sans-serif;
+  font-size: 36px;
+  color: #444;
+  font-weight: 700;
+  margin: 0;
+}
+
+.gloss-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #888;
+  font-weight: 500;
+  margin: 0;
+}
+
+.gloss-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.gloss-color {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 16px 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.color-swatch.gloss-swatch { /* Specific swatch for gloss */
+  display: inline-block;
+  width: 24px;
+  height: 16px;
+  background-color: #664403; /* Example color for a clear/light gloss */
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+.gloss-button {
+  background-color: #664403; /* Button color matching gloss swatch */
+  color: #fff; /* Darker text for contrast */
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.gloss-button:hover {
+  background-color: #e6da7c; /* Darker shade on hover */
+}
+
+.gloss-benefits {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #444;
+  margin-top: 12px;
+}
+
+.gloss-benefits h3 {
+  font-family: 'Antonio', sans-serif;
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.gloss-benefits ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.gloss-benefits li {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 900px) {
+  .gloss-page {
+    flex-direction: column;
+    padding: 32px 20px;
+  }
+
+  .gloss-image-section,
+  .gloss-details-section {
+    padding: 20px;
+  }
+  .nav-left,
+  .nav-right {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+}

@@ -7,7 +7,7 @@
     
   }
   
-  
+
   .content-container {
     flex: 1;
     display: flex;
@@ -98,16 +98,16 @@
     margin: 0 -10px 30px 0;
     padding: 0px 10px 20px 0;
     border-top-right-radius: 21px;
-    border-bottom-right-radius: 21px;
-    height:auto;
-    width: auto;
+    border-bottom-right-radius: 2px;
+    height: 200%;
+    width: 100%;
     overflow: hidden;
   }
   
   .product-image {
     width: 100%;
-    height: auto;
-    object-fit: fill;
+    height: 100%;
+    object-fit: fit;
     
     border-top-right-radius: 21px;
     border-bottom-right-radius: 21px;

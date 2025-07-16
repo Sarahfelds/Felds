@@ -1,0 +1,368 @@
+/* LoginSignup.css */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+.login-signup-container {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background-color: #faf9f6; /* Set the background color for the entire page */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+/* Top Banner - consistent styling with other "cards" */
+.shipping-banner {
+  background-color: white; /* Changed to white for consistency */
+  height: 25px;
+  border-radius: 21px; /* Changed to 21px for consistency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 20px 19px;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.20);
+  width: calc(100% - 38px); /* Adjust width to account for margins */
+  max-width: 1200px; /* Constrain max width for larger screens */
+}
+
+.shipping-banner p {
+  font-weight: 700;
+  font-size: 16px;
+  color: #585555;
+  margin: 0;
+}
+
+.pause-button {
+  position: absolute;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Navigation - simplified for login page, consistent styling */
+.login-nav {
+  background-color: white;
+  padding: 16px 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+  border-radius: 21px;
+  margin-left: 19px;
+  margin-right: 19px;
+  width: calc(100% - 38px); /* Adjust width to account for margins */
+  max-width: 1200px; /* Constrain max width for larger screens */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.10); /* Added subtle shadow for depth */
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  font-weight: 700;
+  font-size: 20px;
+  color: #585555;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  color: #991b1b;
+}
+
+/* Logo - adapted for login page */
+.logo-container {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+
+.logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 50px;
+  font-weight: lighter;
+  color: #991b1b;
+  margin: 0;
+}
+
+.subtitle {
+  font-family: 'The Nautigal', cursive;
+  font-size: 20px;
+  color: #6b7280;
+  font-style: italic;
+  margin: 0;
+  position: absolute;
+  right: -60px;
+  bottom: 5px;
+}
+
+/* Main Content - split screen layout, consistent styling */
+.main-content {
+  display: flex;
+  min-height: calc(100vh - 140px); /* Keep this as it's specific to content height */
+  margin: 20px 19px;
+  border-radius: 21px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.20);
+  width: calc(100% - 38px); /* Adjust width to account for margins */
+  max-width: 1200px; /* Constrain max width for larger screens */
+  background-color: white; /* Ensure the main content area has a white background */
+}
+
+/* Left Side - Product Image */
+.product-image-section {
+  flex: 0.5;
+  position: relative;
+  background-image: url('/src/Components/Assets/Login.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+}
+
+/* Optional overlay for better text readability if needed */
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1); /* Light overlay */
+  pointer-events: none;
+}
+
+/* Right Side - Login Form */
+.form-section {
+  flex: 1;
+  background-color: white; /* Already white, good */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Form Header */
+.form-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 48px;
+  font-weight: lighter;
+  color: #585555;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Form Inputs */
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 16px 20px;
+  background-color: #f9fafb;
+  border: none;
+  border-radius: 8px;
+  color: #585555;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-input::placeholder {
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+.form-input:focus {
+  background-color: white;
+  box-shadow: 0 0 0 2px rgba(153, 27, 27, 0.2);
+  border: 1px solid #991b1b;
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  padding: 16px;
+  background: transparent;
+  border: 2px solid #9ca3af;
+  color: #585555;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+.submit-button:hover {
+  border-color: #991b1b;
+  color: #991b1b;
+  background-color: rgba(153, 27, 27, 0.05);
+}
+
+/* Form Links */
+.form-links {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.forgot-password-btn {
+  display: block;
+  color: #9ca3af;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  width: 100%;
+  transition: color 0.3s ease;
+}
+
+.forgot-password-btn:hover {
+  color: #991b1b;
+}
+
+.toggle-text {
+  color: #9ca3af;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.toggle-button {
+  background: transparent;
+  border: none;
+  color: #585555;
+  text-decoration: underline;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.toggle-button:hover {
+  color: #991b1b;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column; /* Stack image and form vertically */
+    min-height: auto; /* Allow height to adjust */
+    margin: 20px 10px; /* Adjust margins for smaller screens */
+    width: calc(100% - 20px); /* Adjust width for smaller screens */
+  }
+
+  .product-image-section {
+    flex: 1; /* Allow image section to take full width */
+    min-height: 250px; /* Ensure image section has a minimum height */
+  }
+
+  .form-section {
+    padding: 30px 20px; /* Adjust padding for smaller screens */
+  }
+  
+  .nav-left, .nav-right {
+    gap: 10px;
+  }
+  
+  .nav-item {
+    font-size: 16px;
+  }
+  
+  .logo {
+    font-size: 40px;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    right: -40px;
+  }
+
+  .shipping-banner {
+    margin: 20px 10px; /* Adjust margins for smaller screens */
+    width: calc(100% - 20px); /* Adjust width for smaller screens */
+  }
+
+  .login-nav {
+    margin: 0 10px; /* Adjust margins for smaller screens */
+    width: calc(100% - 20px); /* Adjust width for smaller screens */
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .nav-left,
+  .nav-right {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .login-nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    margin: 0 10px;
+  }
+
+  .form-section {
+    padding: 20px 15px;
+  }
+
+  .form-title {
+    font-size: 36px;
+  }
+
+  .form-input {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+
+  .submit-button {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .forgot-password-btn,
+  .toggle-text,
+  .toggle-button {
+    font-size: 12px;
+  }
+}
