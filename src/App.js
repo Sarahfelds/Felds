@@ -64,6 +64,7 @@ function App() {
   }
 
   // Helper function for common layout, excluding Navbar for specific pages
+  // eslint-disable-next-line no-unused-vars
   const commonLayout = (PageComponent, showHero = false, showPhilosophy = false) => (
     <>
       {/* Conditionally render the main Navbar based on the page */}
