@@ -1,6 +1,6 @@
 import React from 'react';
 import './Gloss.css'; // Import the CSS file for styling
-import GlossImage from '../Components/Assets/Gloss.jpg'; // Import the specific image
+import GlossImage from '../Components/Assets/Gloss-2.jpg'; // Import the specific image
 import '../Components/Navbar/Navbar.css'; // Import Navbar CSS for consistent navigation styling
 
 const Gloss = ({ onNavigate, onAddToCart, onCartClick, onSearchClick, cartItemCount }) => {

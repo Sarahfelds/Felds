@@ -2,7 +2,7 @@
 import { useState } from "react"
 import "./Shop.css"
 import BlushImg from '../Components/Assets/Blush.jpg';
-import GlossImg from '../Components/Assets/Gloss.jpg';
+import GlossImg from '../Components/Assets/Gloss-2.jpg';
 import ShapeImg from '../Components/Assets/Shape.jpg';
 import RedLipImg from '../Components/Assets/RedLip.jpg';
 import SkinImg from '../Components/Assets/Skin.jpg';
